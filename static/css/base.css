@@ -1,0 +1,131 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/cathy-pham-unsplash.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #555;
+    font-family: 'Lato';
+    
+}
+.imagen{
+    margin-left: 200px;
+}
+/*from Bulma*/
+.icon{
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.contenedor a{
+    position: relative;
+    min-width: 300px;
+    height: 75px;
+    margin: 100px 0;
+    font-size: 24px;
+    color: white;
+    display: inline-flex;
+    justify-content: left;
+    align-content: center;
+    text-decoration: none;
+    transition: 0.5s;
+}
+.contenedor a:hover{
+    color: lightblue;
+}
+
+.contenedor a span{
+    position: relative;
+    z-index: 1;
+}
+.contenedor a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: url('/media/btn-bg1.png');
+    background-size: cover;
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+.contenedor a:hover:before{
+    width: 100%;
+}
+
+ .letrero{
+    margin-left: 100px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #222;
+    color: white;
+}
+
+.text-black {
+    color: whitesmoke !important;
+    font-weight: bolder;
+}
+
+.text-menu {
+    color: whitesmoke !important;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+.bg-black {
+    background: #000 !important;
+}
+
+.h1, h1{
+    padding-top: 15vh;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: larger;
+    color: white;
+}
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
